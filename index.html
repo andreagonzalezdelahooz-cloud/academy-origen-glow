@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173d35">
+<title>ACADEMY ORIGEN GLOW</title>
+<style>
+:root{--forest:#173d35;--forest2:#245448;--sage:#dce8d8;--cream:#faf8f1;--gold:#c99e56;--ink:#23312c;--muted:#68756e;--white:#fff;--line:#e7e9df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(250,248,241,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-size:13px;letter-spacing:.14em;font-weight:800;color:var(--forest)}.mark{width:38px;height:38px;border-radius:50% 50% 50% 8px;background:var(--forest);color:#f6e8c9;display:grid;place-items:center;font-family:Georgia,serif;font-size:21px}.links{display:flex;gap:25px;align-items:center;font-size:13px;font-weight:650}.links a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:999px;padding:12px 19px;font-weight:750;font-size:13px;cursor:pointer;transition:.2s}.nav-cta,.btn-primary{background:var(--forest);color:white}.nav-cta:hover,.btn-primary:hover{background:var(--forest2);transform:translateY(-1px)}.btn-light{background:white;color:var(--forest);border:1px solid var(--line)}.hero{padding:74px 0 66px;background:radial-gradient(ellipse at 88% 12%,#e7ead5 0,transparent 33%),linear-gradient(135deg,#faf8f1 30%,#f1f2e8 100%);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--forest2);font-weight:850;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";height:1px;width:28px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(44px,6vw,76px);font-weight:500;line-height:1.02;letter-spacing:-.045em;color:var(--forest);margin:19px 0 22px}h1 em{font-weight:400;color:#a67b3d} .hero p{font-size:17px;color:var(--muted);max-width:550px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.micro{font-size:12px;color:var(--muted);margin-top:17px}.visual{min-height:430px;position:relative;display:grid;place-items:center}.sun{width:min(360px,80%);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#dfe8d4,#c5d5bd);position:relative;display:grid;place-items:center;box-shadow:0 30px 70px #173d3515}.sun:before{content:"";position:absolute;inset:23px;border:1px solid #ffffffa0;border-radius:50%}.sun:after{content:"";position:absolute;width:58%;height:74%;border:1px solid #ffffffa0;border-radius:50%;transform:rotate(38deg)}.sun-inner{text-align:center;z-index:1;color:var(--forest)}.sun-inner .leaf{font-size:72px;line-height:1}.sun-inner strong{display:block;font-family:Georgia,serif;font-size:28px;font-weight:500;line-height:1.05;margin-top:8px}.sun-inner span{display:block;font-size:10px;letter-spacing:.2em;margin-top:12px}.float-card{position:absolute;background:#fffdf8;border:1px solid #e9e5d8;border-radius:16px;padding:15px 18px;box-shadow:0 16px 45px #1b392514;font-size:12px}.float-card b{display:block;color:var(--forest);font-size:14px}.fc1{top:48px;right:0}.fc2{bottom:39px;left:0}.pill{display:inline-block;background:#e8efe2;color:var(--forest);padding:5px 9px;border-radius:999px;font-size:10px;font-weight:800;margin-bottom:7px}
+.trust{background:var(--forest);color:#f8f4e9;padding:22px 0}.trust-row{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.trust-item{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.02em}.trust-item span{color:#e1c18a;font-size:19px}
+section{padding:78px 0}.section-head{max-width:650px;margin-bottom:35px}.section-head h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(34px,4vw,49px);line-height:1.1;color:var(--forest);letter-spacing:-.025em;margin:12px 0}.section-head p{color:var(--muted);font-size:15px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:26px;min-height:230px;display:flex;flex-direction:column;align-items:flex-start}.card-icon{width:48px;height:48px;border-radius:15px;background:var(--sage);display:grid;place-items:center;font-size:23px;margin-bottom:23px}.card h3{color:var(--forest);font-size:19px;margin-bottom:8px}.card p{font-size:13px;color:var(--muted);margin-bottom:20px}.text-link{margin-top:auto;color:var(--forest);font-weight:800;font-size:12px;border-bottom:1px solid #c99e56;padding-bottom:3px}.feature{background:#edf0e6}.feature-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}.feature-art{min-height:360px;background:var(--forest);border-radius:24px;padding:35px;color:#f8f4e9;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}.feature-art:after{content:"✳";position:absolute;font-size:240px;line-height:1;color:#ffffff0b;right:-5px;top:35px}.feature-art small{letter-spacing:.18em;text-transform:uppercase;color:#d9c18e}.feature-art strong{font-family:Georgia,serif;font-weight:400;font-size:42px;line-height:1.05;max-width:300px;z-index:1}.feature-art p{font-size:12px;color:#d7e0d6;max-width:270px;margin-bottom:0}.feature-copy h2{font-family:Georgia,serif;font-size:clamp(33px,4vw,47px);font-weight:500;line-height:1.1;color:var(--forest)}.feature-copy p{color:var(--muted)}.checks{list-style:none;padding:0;margin:25px 0}.checks li{display:flex;gap:11px;margin:12px 0;font-size:14px}.checks li:before{content:"✓";display:grid;place-items:center;width:23px;height:23px;flex:0 0 23px;border-radius:50%;background:#dce8d8;color:var(--forest);font-weight:900}
+.join{background:var(--forest);color:#f9f6ed}.join-grid{display:grid;grid-template-columns:1fr .9fr;gap:55px;align-items:start}.join h2{font-family:Georgia,serif;font-size:clamp(35px,4vw,52px);font-weight:500;line-height:1.08}.join p{color:#d4dfd5}.join .eyebrow{color:#e4c994}.form-box{background:#fffdf8;color:var(--ink);padding:28px;border-radius:20px}.form-box h3{font-size:19px;color:var(--forest);margin-bottom:5px}.form-box>p{color:var(--muted);font-size:12px}.field{margin:14px 0}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid #dfe4d9;border-radius:10px;background:white;padding:12px;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--forest)}.field textarea{min-height:85px;resize:vertical}.form-box .btn{width:100%;margin-top:7px}.notice{font-size:11px!important;color:#6f7b73!important;margin-top:12px}.form-result{display:none;background:#e8efe2;border-radius:12px;padding:13px;font-size:13px;color:var(--forest);margin-top:12px}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px}.faq-grid h2{font-family:Georgia,serif;font-size:42px;line-height:1.1;color:var(--forest);font-weight:500}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{font-weight:750;cursor:pointer;color:var(--forest);font-size:14px}.faq details p{font-size:13px;color:var(--muted);margin:12px 0 0}
+footer{background:#102f29;color:#f6f2e8;padding:28px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.foot small{color:#c5d1c6;font-size:11px}.foot-links{display:flex;gap:16px;font-size:11px;color:#d7e0d6}.modal{position:fixed;inset:0;background:#071b17b8;z-index:30;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modal-panel{width:min(470px,100%);background:var(--cream);border-radius:20px;padding:28px;position:relative}.modal-close{position:absolute;right:17px;top:12px;border:0;background:transparent;font-size:25px;cursor:pointer}.modal-panel h2{font-family:Georgia,serif;font-size:32px;font-weight:500;color:var(--forest)}.modal-panel p{font-size:13px;color:var(--muted)}.demo-warning{font-size:11px;background:#fff1d8;padding:11px;border-radius:10px;color:#6c4c1d;margin-top:14px}
+@media(max-width:800px){.links{display:none}.hero{padding:52px 0}.hero-grid,.feature-grid,.join-grid,.faq-grid{grid-template-columns:1fr;gap:32px}.visual{min-height:330px}.sun{width:280px}.fc1{right:2%}.fc2{left:1%}.cards{grid-template-columns:1fr}.card{min-height:0}.trust-row{justify-content:center}.trust-item{width:44%}section{padding:58px 0}.feature-art{min-height:290px}.join-grid{gap:20px}}
+@media(max-width:420px){.wrap{width:min(100% - 28px,1120px)}.brand{font-size:11px}.nav-cta{padding:10px 13px;font-size:11px}.hero p{font-size:15px}.actions .btn{width:100%}.float-card{padding:11px 13px}.trust-item{width:100%}.form-box{padding:21px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><span class="mark">✳</span><span>ACADEMY<br>ORIGEN GLOW</span></a>
+    <nav class="links"><a href="#academia">La academia</a><a href="#mentora">Mentora IA</a><a href="#nutricion">Nutrición</a><a href="#preguntas">Preguntas</a></nav>
+    <button class="nav-cta" data-modal="login">Acceso privado ↗</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Tu espacio para crecer</div>
+      <h1>Crece con propósito.<br><em>Brilla a tu manera.</em></h1>
+      <p>Una academia para aprender a crear contenido, desarrollar tu presencia digital y avanzar acompañada, con formación práctica y herramientas inteligentes.</p>
+      <div class="actions"><a class="btn btn-primary" href="#solicitud">Quiero formar parte <span style="margin-left:10px">↗</span></a><a class="btn btn-light" href="#academia">Descubrir la academia</a></div>
+      <div class="micro">Formación · Comunidad · Acompañamiento</div>
+    </div>
+    <div class="visual" aria-label="Ilustración decorativa Origen Glow">
+      <div class="sun"><div class="sun-inner"><div class="leaf">❋</div><strong>Origen<br>Glow</strong><span>CRECE DESDE TU ESENCIA</span></div></div>
+      <div class="float-card fc1"><span class="pill">TU PRÓXIMO PASO</span><b>Aprende · Crea · Crece</b><span>Con intención y constancia</span></div>
+      <div class="float-card fc2"><b>✦ Tu talento, tu camino</b><span>Un paso cada día</span></div>
+    </div>
+  </div>
+</section>
+<div class="trust"><div class="wrap trust-row"><div class="trust-item"><span>✳</span> Formación práctica y cercana</div><div class="trust-item"><span>⌁</span> Herramientas para redes sociales</div><div class="trust-item"><span>♡</span> Acceso según tu perfil</div><div class="trust-item"><span>✧</span> Comunidad en crecimiento</div></div></div>
+<section id="academia">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Explora tus posibilidades</div><h2>Todo empieza con una idea.<br>Vamos a darle forma.</h2><p>Un espacio organizado para que encuentres los recursos que necesitas y avances a tu ritmo.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">◉</div><h3>Academia de redes</h3><p>Aprende a planificar contenido, grabar vídeos y comunicar tu propuesta en TikTok e Instagram.</p><a class="text-link" href="#solicitud">Solicitar acceso ↗</a></article>
+      <article class="card" id="mentora"><div class="card-icon">✧</div><h3>Mentora IA</h3><p>Un espacio pensado para desarrollar ideas, preparar guiones y encontrar nuevas formas de contar tu historia.</p><a class="text-link" href="#solicitud">Quiero aprender ↗</a></article>
+      <article class="card" id="nutricion"><div class="card-icon">❋</div><h3>Nutrición privada</h3><p>Área reservada para clientes autorizados, con recursos y seguimiento que se habilitarán de forma privada.</p><a class="text-link" href="#solicitud">Consultar acceso ↗</a></article>
+    </div>
+  </div>
+</section>
+<section class="feature">
+  <div class="wrap feature-grid">
+    <div class="feature-art"><small>ACADEMY ORIGEN GLOW · TU ESPACIO</small><strong>Tu crecimiento no tiene que parecerse al de nadie.</strong><p>Aprende con estructura. Crea con autenticidad. Avanza con apoyo.</p></div>
+    <div class="feature-copy"><div class="eyebrow">Un camino a tu medida</div><h2>Aprende habilidades que puedes poner en práctica.</h2><p>La academia está pensada para acompañarte desde las primeras ideas hasta una rutina de creación de contenido más clara y sostenible.</p><ul class="checks"><li>Formación organizada por temas y niveles.</li><li>Ideas para vídeos, publicaciones y calendarios de contenido.</li><li>Acceso privado según aprobación y permisos.</li><li>Recursos separados para equipo y clientes.</li></ul><a class="btn btn-primary" href="#solicitud">Solicitar acceso</a></div>
+  </div>
+</section>
+<section class="join" id="solicitud">
+  <div class="wrap join-grid">
+    <div><div class="eyebrow">Empieza aquí</div><h2>¿Te gustaría formar parte de Origen Glow?</h2><p>Cuéntanos un poco sobre ti. Podrás solicitar acceso a la academia y el equipo administrador revisará tu solicitud antes de habilitar tu espacio.</p><ul class="checks"><li style="color:#f9f6ed">La solicitud no concede acceso automáticamente.</li><li style="color:#f9f6ed">Los módulos se habilitarán según tu perfil.</li><li style="color:#f9f6ed">El área de clientes será independiente.</li></ul></div>
+    <form class="form-box" id="requestForm">
+      <h3>Solicita tu acceso</h3><p>Completa estos datos para preparar tu solicitud.</p>
+      <div class="field"><label for="name">Nombre y apellidos</label><input id="name" name="name" autocomplete="name" required placeholder="Tu nombre"></div>
+      <div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.com"></div>
+      <div class="field"><label for="profile">¿Qué espacio te interesa?</label><select id="profile" name="profile" required><option value="">Selecciona una opción</option><option>Academia de redes sociales</option><option>Captación / equipo Farmasi</option><option>Área privada de nutrición</option><option>Quiero conocer todas las opciones</option></select></div>
+      <div class="field"><label for="message">¿Qué te gustaría aprender? (opcional)</label><textarea id="message" name="message" placeholder="Cuéntanos brevemente…"></textarea></div>
+      <button class="btn btn-primary" type="submit">Preparar solicitud ↗</button>
+      <div class="form-result" id="formResult" role="status"></div>
+      <p class="notice">Esta versión es una demostración: el formulario no envía ni almacena tus datos. No introduzcas información sensible. Para recibir solicitudes reales habrá que conectarlo a un servicio seguro y añadir la información legal y de privacidad correspondiente.</p>
+    </form>
+  </div>
+</section>
+<section id="preguntas">
+  <div class="wrap faq-grid"><div><div class="eyebrow">Antes de empezar</div><h2>Preguntas frecuentes</h2><p style="color:var(--muted);font-size:14px">Información clara para que sepas cómo funcionará tu espacio.</p></div>
+  <div class="faq"><details><summary>¿Cómo consigo acceso a la academia?</summary><p>Envía una solicitud. Cuando la plataforma esté conectada, una administradora podrá revisarla y aprobar o denegar el acceso.</p></details><details><summary>¿Todo el mundo verá los mismos módulos?</summary><p>No. La idea es asignar permisos por perfil para que cada persona vea únicamente los módulos autorizados.</p></details><details><summary>¿La mentora IA ya está activa?</summary><p>En esta página solo se presenta el módulo. Para usar IA de verdad habrá que integrar y probar un servicio compatible, revisando sus límites y posibles costes.</p></details><details><summary>¿Puedo acceder al área de nutrición?</summary><p>El área está prevista para clientes autorizados. No se deben cargar datos de salud ni información de clientes hasta implementar controles de acceso, privacidad y seguridad adecuados.</p></details></div></div>
+</section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#inicio" style="color:#f6f2e8"><span class="mark" style="background:#f6e8c9;color:#173d35">✳</span><span>ACADEMY<br>ORIGEN GLOW</span></a><small>© <span id="year"></span> Academy Origen Glow · Página inicial de demostración</small><div class="foot-links"><a href="#preguntas">Información</a><a href="#solicitud">Contacto / acceso</a></div></div></footer>
+<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle"><div class="modal-panel"><button class="modal-close" aria-label="Cerrar" id="closeModal">×</button><div class="eyebrow">Zona privada</div><h2 id="loginTitle">Bienvenida de nuevo</h2><p>El inicio de sesión real se activará cuando conectemos la plataforma de usuarios y la aprobación manual.</p><div class="field"><label for="loginEmail">Correo electrónico</label><input id="loginEmail" type="email" placeholder="tu@correo.com"></div><div class="field"><label for="loginPassword">Contraseña</label><input id="loginPassword" type="password" placeholder="Disponible en la versión conectada" disabled></div><button class="btn btn-primary" style="width:100%" id="loginInfo">Entendido</button><div class="demo-warning">Modo demostración: todavía no existe autenticación. No introduzcas contraseñas reales.</div></div></div>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const modal = document.getElementById('loginModal');
+document.querySelectorAll('[data-modal="login"]').forEach(b=>b.addEventListener('click',()=>modal.classList.add('open')));
+document.getElementById('closeModal').addEventListener('click',()=>modal.classList.remove('open'));
+document.getElementById('loginInfo').addEventListener('click',()=>modal.classList.remove('open'));
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('open')});
+document.getElementById('requestForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const result=document.getElementById('formResult');
+ result.style.display='block';
+ result.textContent=`Gracias${name ? ', '+name : ''}. El formulario de demostración funciona visualmente, pero aún no envía la solicitud. La conexión segura se añadirá en la siguiente fase.`;
+});
+</script>
+</body>
+</html>
